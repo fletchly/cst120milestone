@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&family=Righteous&display=swap');
+@import url("https://db.onlinewebfonts.com/c/ef65b1e681e34a58fb402aab7704556d?family=CMU+Concrete+Italic");
+
+body {
+    font-family: "IBM Plex Mono", monospace;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.navbar-wrapper {
+    display: flex;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: italic;
+    padding: 5px 0;
+}
+
+.navbar-wrapper a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin: 0;
+}
+
+.navbar-wrapper a:hover {
+    background: black;
+    color: white;
+}
+
+
+div.navspace.left, div.navspace.right {
+    flex: 1;
+}
+
+@media screen and (max-width: 685px) {
+    .navspace {
+        display: none;
+    }
+
+    .navbar {
+        display: inline-block;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    h1.site-title {
+        font-size: 100px;
+    }
+
+    div.title-wrapper {
+        max-width: 480px;
+    }
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.navspace, .navbar {
+    padding: 0 10px;
+}
+
+#site-logo {
+    display: inline-block;
+    font-family: "Jacquarda Bastarda 9", serif;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.site-title {
+    font-family: "Jacquarda Bastarda 9", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 200px;
+    margin: 0 20px;
+    line-height: 0.8;
+}
+
+.title-wrapper {
+    margin: 50px auto 80px;
+}
+
+div#face {
+    display: inline-block;
+    cursor: none;
+}
+
+div#face span#smile {
+    display: inline;
+}
+
+div#face:hover span#smile {
+    display: none;
+}
+
+div#face span#wow {
+    display: none;
+}
+
+div#face:hover span#wow {
+    display: inline;
+}
+
+div.lg {
+    max-width: 992px;
+}
+
+.content-wrapper {
+    margin: auto;
+    padding: 0 50px
+}
+
+.content-wrapper h1 {
+    font-family: "CMU Concrete Italic", monospace;
+    font-style: italic;
+    font-size: 50px;
+    margin-bottom: 0;
+    width: 100%
+}
+
+.content-wrapper p {
+    margin-top: 0;
+    text-align: justify;
+}
+
+.flex-container img {
+    padding-bottom: 20px;
+    align-self: center;
+}
+
+.flex-container {
+    display: flex;
+}
+
+@media screen and (max-width: 992px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-container img {
+        width: 50%;
+        margin: 30px auto;
+    }
+}
+
+.footer {
+    margin: 50px auto 0;
+    text-align: center;
+    color: darkgray;
+}
+
+.footer .copyright {
+    padding: 30px;
+}
+
+.contact-sheet {
+    margin: auto;
+}
+
+.contact-sheet td:first-child {
+    text-align: right;
+}
+
+.milestone-goals li {
+    margin-bottom: 10px;
+}
+
+img.milestone-img {
+    width: 50%;
+}
+
+div#transition-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 30px;
+    background: powderblue;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+#animated-hello {
+    animation: blinker 2s step-start infinite;
+}
+
+.content-wrapper hr {
+    margin-top: 50px;
+}
