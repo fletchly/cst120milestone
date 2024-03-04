@@ -205,3 +205,58 @@ div#transition-wrapper {
 .content-wrapper hr {
     margin-top: 50px;
 }
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.contact-form textarea {
+    resize: none;
+    font-family: "IBM Plex Mono", monospace;
+    height: 7lh;
+}
+
+.contact-field {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 0;
+    border: black 2px solid;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: content-box;
+}
+
+.slide-up {
+    position: relative;
+    overflow: hidden;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.slide-up::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: black;
+    transition: height 0.3s ease;
+    z-index: -1;
+}
+
+.slide-up:hover {
+    color: white;
+}
+
+.slide-up:hover::before {
+    height: 100%;
+}
+

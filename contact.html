@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,22 +31,20 @@
 </div>
 
 <!-- Page Content -->
-<div class="content-wrapper lg">
-    <table class="contact-sheet">
-        <tr>
-            <td>email:</td>
-            <td><a href="mailto:omount@my.gcu.edu">omount&commat;my.gcu.edu</a></td>
-        </tr>
-        <tr>
-            <td>phone:</td>
-            <td>770.407.9411</td>
-        </tr>
-        <tr>
-            <td>github:</td>
-            <td><a href="https://github.com/fletchly">&commat;fletchly</a></td>
-        </tr>
-    </table>
-</div>
+<div class="content-wrapper lg ">
 
+    <form class="contact-form">
+        <p>I'd love to hear from you! Send me a message using the form below.</p>
+        <input class="contact-field" id="name" type="text" placeholder="NAME">
+        <input class="contact-field" id="email" type="email" placeholder="EMAIL">
+        <textarea class="contact-field" id="msg" placeholder="MESSAGE"></textarea>
+        <button class="contact-field slide-up" type="submit"><span class="btn-text">SUBMIT</span></button>
+    </form>
+
+</div>
+<div class="footer lg">
+    <hr>
+    <div class="copyright">&copy; 2024 Owen Mount</div>
+</div>
 </body>
 </html>
