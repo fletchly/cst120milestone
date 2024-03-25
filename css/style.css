@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Micro+5&family=Righteous&display=swap');
 @import url("https://db.onlinewebfonts.com/c/ef65b1e681e34a58fb402aab7704556d?family=CMU+Concrete+Italic");
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 
 body {
     font-family: "IBM Plex Mono", monospace;
@@ -260,3 +261,70 @@ div#transition-wrapper {
     height: 100%;
 }
 
+.event1-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.event-btn {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 18px;
+    border-radius: 0;
+    border: black 2px solid;
+    padding: 10px 20px;
+    margin: 10px 0;
+    box-sizing: content-box;
+}
+
+.calc-font {
+    font-family: "DotGothic16", monospace;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.calc-wrapper {
+    display: grid;
+    grid-template:
+        'd d d d'
+        'a a p p'
+        'b b b b'
+        'b b b b'
+        'b b b b'
+        'b b b b';
+    text-align: center;
+    width: 361px;
+    font-size: 24px;
+    border: 2px solid black;
+    margin: auto;
+}
+
+.calc-item, .calc-button {
+    padding: 25px 25px;
+    border: 2px solid black;
+}
+
+.calc-button:hover {
+    background-color: black;
+    color: white;
+}
+
+#disp {
+    grid-area: d;
+    text-align: right;
+}
+
+#ac {
+    grid-area: a;
+}
+
+#ac:hover {
+    background-color: crimson;
+    color: white;
+}
+
+#e:hover {
+    background-color: green;
+    color: white;
+}
