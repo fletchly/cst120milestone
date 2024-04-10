@@ -261,7 +261,7 @@ div#transition-wrapper {
     height: 100%;
 }
 
-.event1-wrapper {
+.event-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
