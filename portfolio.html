@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script src="js/events.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
+        function showHide()
+        {
+            $("#hscontent").toggle();
+        }
+
+        function init()
+        {
+            $("#show-hide").bind('click', showHide);
+        }
+
+        $(document).ready(init);
     </script>
 </head>
 <body>
@@ -21,6 +31,7 @@
         <a href="portfolio.html">portfolio</a>
         <a href="contact.html">contact</a>
         <a href="calculator.html">calculator</a>
+        <a href="bootstrap.html">bootstrap</a>
     </div>
     <div class="navspace right">
         <div id="face">
@@ -101,6 +112,7 @@
             <li>All code must be formatted with adequate comments</li>
         </ul>
     </div>
+    <p id="hscontent">This content can be hidden/shown</p>
 </div>
 
 <!-- Page Footer -->
@@ -108,5 +120,7 @@
     <hr>
     <div class="copyright">&copy; 2024 Owen Mount</div>
 </div>
+
+<script src="js/events.js"></script>
 </body>
 </html>
